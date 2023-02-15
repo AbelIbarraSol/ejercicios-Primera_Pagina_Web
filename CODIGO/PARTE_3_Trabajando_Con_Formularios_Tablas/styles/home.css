@@ -1,0 +1,66 @@
+body{
+    background: #ffffff;
+    font-size: 20px;
+}
+
+#banner{
+    width: 97.4%;
+    margin: 20px;
+}
+
+h2, h3{
+    text-align: center;
+    color: #ffffff;
+}
+
+.titulo{
+    color: #ffffff;
+    padding: 15px;
+    margin: 20px;
+    background: url(../imagenes/bg.jpg);
+}
+
+#texto, #lista{
+    padding: 15px;
+    margin: 20px;
+    border: 5px solid;
+    border-color: rgb(39, 36, 36);
+    background: #bbbbbb;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+/** 
+    **  Estilos en cascada, en este caso para dar estilo a la equeta <strong>(hijo) que se encuentra dentro de 
+    **  la etiqueta <p>(padre) se coloca de la siguiente forma respetando su jerarquia
+*/
+p strong{
+    color: rgb(255, 255, 255);
+}
+
+/* ** Estilo en la etiqueta <p> usando id=" ", para llamarlo se usa # antes del nombre  */
+#mision{
+    text-align: center;
+    font-size: 25px;
+}
+
+/* ** Estilos en las etiquetas <li> usando class="", para llamarlo se usa . antes del nombre */
+.items{
+    font-style: italic;
+}
+
+/** Las listas ocupan toda la pantalla por lo que usamos la propiedad "display:inline-block" para que se pueda acomodar segun lo que se requiera*/
+ul{
+    display: inline-block;
+    vertical-align: 170px;
+    width: 30%;
+    margin: 8.4%;
+}
+
+#img_Diferencial{
+    width: 40%;
+    padding: 15px;
+}

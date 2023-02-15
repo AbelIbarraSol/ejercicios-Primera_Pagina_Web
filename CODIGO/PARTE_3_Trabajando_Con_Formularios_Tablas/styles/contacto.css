@@ -1,0 +1,113 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /* ** "20px" arriba y abajo, 0 derecha y izquierda */
+}
+/* * "position = relative" se usa para poder mover un elemento de su posicion pero sin que se salga de su punto inicial
+   * "position = absolute" se usa para poder mover un elemento de su posicion a cualquier punto de la pagina*/
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+.caja{
+    width: 940px;    
+    position: relative;
+    margin: 0 auto;
+}
+nav li{
+    display: inline; /* ** Ordena los items en un solo reglon o linea*/
+    margin: 0 0 0 15px;  /* ** 0 "arriba", 0 "derecha", 0 "abajo", 15px "izquierda" */
+}
+
+nav a{
+    text-transform: uppercase; /* ** Transforma el texto en mayuscula (uppercase) */
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /* ** Quita el subrayado del hipervinculo*/
+}
+/** "hover", propiedad que captura el movimiento del mouse*/
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline; /* * subrayar texto*/
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+fieldset{
+    margin-top: 10px;
+}
+
+form label, legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.enviar{
+    width: 50%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: darkorange;
+    border: none;
+    border-radius: 5px;
+    /*** "transition" propiedad que permite dar un efecto a un elemento de html o determinar la duracion del efecto */
+    /* transition: 1s background; */
+    transition: 1s all;
+    cursor: pointer; /*** cambia la flecha del cursor por la manito*/
+}
+
+.enviar:hover{
+    background: #c78c19;
+    /*** "transform" es una propiedad que cambia la forma(en 2d o 3d) de un elemento: escala, rotacion, diagonales etc < */
+    transform: scale(1.05); 
+    /* transform: rotate(70deg); */
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 15px 0;
+}
+
+table{
+    margin:40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+footer{
+    text-align: center;
+    background: url(../imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #cccccc;
+    font-size: 13px;
+    margin: 20px;
+}

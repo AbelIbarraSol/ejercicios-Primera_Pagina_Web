@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <title>Contacto- ALURA BABER</title>
+</head>
+<body>
+     <header>
+        <div class="caja">
+            <!-- ** "alt" atributo de la etiqueta <img> que muestra un texto alternativo en caso la imagen no cargue -->
+            <h1><img src="../imagenes/logo.png" alt="Logo_De_Barberia_ALURA"></h1>            
+            <nav>
+                <ul>
+                    <!-- ** La etiqueta <a> sirve para colocar un hipervinculo a un texto o imagen 
+                         *(usar el atributo "href= url" con el documento o url que queremos que redirija) -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+     </header>
+     <main>
+        <form>
+            <!--** "required" es una propiedad de html que obliga al ususario a llenar el campo-->
+            <label for="nomyApe">Nombre y Apellido</label>
+            <input type="text" id="nomyApe" class="input-padron" required>
+            <!-- ** "placeholder" es una propiedad de html que escribe un ejemplo o mensaje en el campo antes de ser llenado-->
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telf">Teléfono</label>
+            <input type="tel" id="telf" class="input-padron" required placeholder="(XX) XXX XXX XXX">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="70" rows="10"></textarea>
+
+            <!-- ** "fieldset" agrupa contenido relacionado de un formulario, asi mismo no usa la etiqueta <p> sino la etiqueta <legend> -->
+            <fieldset>
+                <legend>¿Cómo le gustaria que le contactemos?</legend>
+                <!-- **"checked" es una propiedad de html que selecciona predeterminadamente una opcion del radiobutton. -->
+                <label for="radio-email">
+                    <input type="radio" name="contacto" value="Email" id="radio-email" checked>
+                    Email
+                </label>
+                <label for="radio-telf">
+                    <input type="radio" name="contacto" value="Teléfono" id="radio-telf">
+                    Teléfono
+                </label>
+                               
+                <label for="radio-whattsapp">
+                    <input type="radio" name="contacto" value="Whattsapp" id="radio-whattsapp">
+                    Whattsapp
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>¿En cual horario prefiere ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox">
+                <input type="checkbox" checked>¿Le gustaria recibir novedades de Alura Barber?
+            </label>
+            
+            <input type="submit" id="enviar" value="Enviar Formulario" class="enviar">
+        </form>
+        <table>
+            <thead><!--encabezado -->
+                <tr>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+     </main>
+     <footer>
+        <img src="../imagenes/logo-blanco.png" alt="Logo_ALURA_Blanco">
+        <p class="copyright"> &copy; Copyright Alura Barber - 2023</p>
+     </footer>
+</body>
+</html>

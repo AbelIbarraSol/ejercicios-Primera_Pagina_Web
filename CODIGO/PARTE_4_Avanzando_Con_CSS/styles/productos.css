@@ -1,0 +1,139 @@
+body{
+    font-family: 'Quicksand', sans-serif;  
+}
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /* ** "20px" arriba y abajo, 0 derecha y izquierda */
+}
+/* * "position = relative" se usa para poder mover un elemento de su posicion pero sin que se salga de su punto inicial
+   * "position = absolute" se usa para poder mover un elemento de su posicion a cualquier punto de la pagina*/
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+.caja{
+    width: 940px;    
+    position: relative;
+    margin: 0 auto;
+}
+nav li{
+    display: inline; /* ** Ordena los items en un solo reglon o linea*/
+    margin: 0 0 0 15px;  /* ** 0 "arriba", 0 "derecha", 0 "abajo", 15px "izquierda" */
+}
+
+nav a{
+    text-transform: uppercase; /* ** Transforma el texto en mayuscula (uppercase) */
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /* ** Quita el subrayado del hipervinculo*/
+}
+/** "hover", propiedad que captura el movimiento del mouse*/
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline; /* * subrayar texto*/
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* **? ¿Cómo se comporta un elemento que tiene su display con el valor inline-block? */
+/* ** Respuesta: Pudiendo ajustar el tamaño se su contenido, dejandolo regulable (ancho y alto)*/
+.productos div{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /* background: #CCCCCC; */
+    padding: 30px 20px;
+    margin: 0 1.5%;
+     /* ** "box-sizing: border-box" EL borde de cada uno de los items sera el limite de el espacio que va a ser definido*/
+    /* ** Los 20px del padding(ancho) no van a sobrepasar el 30% especificado en el width(ancho de pagina) */
+    box-sizing: border-box;
+    
+    /** 
+     ** border-color: #000000;
+     **border-width: 2px;
+     **border-style: solid;
+     ** Estas tres propiedades pueden ser resumidas de la siguiente forma */
+     border: 2px solid #000000;
+     border-radius: 10px;
+
+
+}
+
+.productos div:hover{
+    border-color: #c78c19;
+    color: #c78c19;
+    font-size: 33px;
+}
+/* ** La propiedad "active" permite capturar el click izquierdo del mouse */
+.productos div:active{
+    border-color: #088c29;
+    color: #088c29;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+/* **? ↓↓↓ ¿Como se interpreta la siguiente propiedad? ↓↓↓ */
+/* ** Cuando la propiedad ":hover" capture el movimento del mouse en la etiqueta <li> 
+    * el cambio se dara solo para la etiqueta <h2> */
+.productos div:hover h2{
+    font-size: 33px;
+}
+.producto_descripcion{
+   font-size: 18px; 
+}
+.producto_precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+footer{
+    text-align: center;
+    background: url(../imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #cccccc;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*** INTERPRETACION del media query: */
+/*** Si encuentras una pantalla con 480px de ancho aplicar los siguientes estilos  */
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    
+    .caja{
+        width: auto;
+    }
+
+    .productos{
+        display: flex;
+        overflow-x:auto;
+    }
+
+    .productos::-webkit-scrollbar{
+        width: 0;
+    }
+    .productos{
+        width: auto;
+    }
+    .productos div{
+        min-width: 100%;
+    }
+}

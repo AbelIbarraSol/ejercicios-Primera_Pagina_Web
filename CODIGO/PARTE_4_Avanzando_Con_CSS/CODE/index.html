@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="../styles/reset.css">
+   <link rel="stylesheet" href="../styles/home.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+   <title>HOME - ALURA BABER</title>
+</head>
+
+<body>
+   <header>
+      <div class="caja">
+         <h1><img src="../imagenes/logo.png"></h1>
+         <nav>
+            <ul>
+               <!-- ** La etiqueta <a> sirve para colocar un hipervinculo a un texto o imagen 
+                 *(usar el atributo "href= url" con el documento o url que queremos que redirija) -->
+               <li><a href="index.html">Home</a></li>
+               <li><a href="productos.html">Productos</a></li>
+               <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <img id="banner" src="/ARCHIVOS/banner/banner2.jpg">
+
+   <main>
+      <!-- <p>Parrafo ejemplo</p>      -->
+      <section class = "principal"> <!-- ** Cuando el bloque tiene un mismo sentido se usa section para agrupa, no <div> -->
+         <h2 class="titulo-principal">Sobre la Barbería ALURA</h2>
+         <img class="utensilios" src="../imagenes/utensilios[1].jpg" alt="imagen_de_utensilios">
+         <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor
+            para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos 
+            clientes diariamente.</p>
+      
+         <p id="mision">
+            <strong><em>Nuestra misión es: "Proporcionar autoestima y calidad de vida a nuestros clientes".</em></strong>
+         </p>
+      
+         <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo
+            de la moda,para así ofrecer a nuestros clientes las últimas tendencias.El atendimiento posee un padrón de 
+            excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+
+      </section>
+
+      <section class="mapa">
+         <h3 class="titulo-principal">Nuestra ubicación</h3>
+         <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+         <!-- ** La etiqueta iframe podemos insertar diferentes tipos de elementos externos en nuestra página. 
+              *  Sean estos mapas, vídeos, imágenes u otras páginas web o páginas de redes sociales. -->
+         <div class="mapa-contenido">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d975.7912977880235!2d-77.0689205067709!3d-11.963062317576288!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1674806847970!5m2!1ses-419!2spe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </section>  
+      
+      <section class="diferenciales">
+         <h3 class="titulo-principal">Diferenciales</h3>
+         <div class="contenido-diferencial">
+            <ul class="lista_diferencial">
+               <li class="items">Atencion personalizada a los clientes</li>
+               <li class="items">Espacio diferenciado</li>
+               <li class="items">Localización</li>
+               <li class="items">Profesionales calificados</li>
+               <li class="items">Puntualidad</li>
+               <li class="items">Limpieza</li>
+            </ul><img class="img_Diferencial" src="/ARCHIVOS/banner/diferenciales.jpg">
+         </div>
+      </section>
+      
+      <div class="video">
+         <iframe width="100%" height="315" src="https://www.youtube.com/embed/jjCg86qz_nE" title="YouTube video player" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+   </main>
+
+   <footer>
+      <img src="../imagenes/logo-blanco.png">
+      <p class="copyright"> &copy; Copyright Alura Barber - 2023</p>
+   </footer>
+
+</body>
+</html>
